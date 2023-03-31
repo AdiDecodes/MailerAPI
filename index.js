@@ -3,7 +3,16 @@ const nodemailer = require("nodemailer");
 const app = express();
 const cors = require("cors");
 require("dotenv").config();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://127.0.0.1:5173",
+      "http://127.0.0.1:5174",
+      "https://aditya.cleverstudio.in",
+    ],
+  })
+);
+
 app.use(express.json());
 
 const ID = process.env.VITE_ID;
