@@ -1,15 +1,21 @@
 {
-    "version" : 2,
-    "builds" : [
-        {
-        "src" : "./index.js",
+    "version": 2,
+    "builds": [
+      {
+        "src": "./index.js",
         "use": "@vercel/node"
-        }
+      }
     ],
-    "routes" : [
-        {
-        "src" : "/(.*)",
-        "dest" : "/"
-        }
+    "routes": [
+      {
+        "src": "/sendmail",
+        "methods": ["POST"],
+        "dest": "./index.js"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "./index.js"
+      }
     ]
-}
+  }
+  
