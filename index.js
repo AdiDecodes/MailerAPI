@@ -20,6 +20,7 @@ const PASS = process.env.VITE_PASS;
 const REC = process.env.VITE_REC;
 
 app.post("/sendmail", (req, res) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
   var transporter = nodemailer.createTransport({
     host: "smtp.hostinger.com",
     port: 465,
