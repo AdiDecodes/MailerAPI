@@ -9,6 +9,7 @@ app.use(
       "http://127.0.0.1:5173",
       "http://127.0.0.1:5174",
       "https://aditya.cleverstudio.in",
+      "http://www.adidecodes.me",
       "https://portfolio-d54fj5sga-adidecodes.vercel.app",
     ],
   })
