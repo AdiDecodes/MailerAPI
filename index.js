@@ -8,7 +8,7 @@ app.use(
     origin: [
       "https://aditya.cleverstudio.in",
       "https://adidecodes.me",
-      "http://localhost:5173"
+      "http://localhost:5173",
       "https://portfolio-d54fj5sga-adidecodes.vercel.app",
     ],
   })
